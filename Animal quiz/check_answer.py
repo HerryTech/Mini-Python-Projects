@@ -17,4 +17,8 @@ def checkAnswer(question, answer):
                 lives -= 1
                 print("Now you can try again")
                 print(question)
-            
+            else:
+                print("Not valid!. Enter 'yes' or 'q'")
+        else:
+            print("You have no lives again. Game over!")
+            exit(0)
