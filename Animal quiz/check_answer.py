@@ -8,14 +8,15 @@ def checkAnswer(guess, answer):
     if guess == "q":
         exit(0)
     elif guess == answer:
-        print("Correct!")
         score += 1   
+        print(f"Correct!. Your score is {score}")
     else:
-        print("\nOops, that was a wrong guess")
-        if lives != 0 & lives <= 3:
-            response = input("Try again: ")
-            if response != "q":
-                lives -= 1
-        else:
-            print("You have no lives again. Game over!")
-            exit(0)
+        while True:
+            print("\nOops, that was a wrong guess")
+            if lives != 0 & lives <= 3:
+                response = input("Try again: ")
+                if response != "q":
+                    lives -= 1
+            else:
+                print("You have no lives again. Game over!")
+                exit(0)
