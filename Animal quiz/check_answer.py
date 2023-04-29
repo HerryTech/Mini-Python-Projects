@@ -7,7 +7,7 @@ def checkAnswer(guess, answer):
 
     if guess == "q":
         exit(0)
-    elif guess == answer:
+    elif guess.lower() == answer.lower():
         score += 1   
         print(f"Correct!. Your score is {score}")
     else:
