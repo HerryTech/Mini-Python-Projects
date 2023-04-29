@@ -4,10 +4,10 @@ from random import choice
 
 print("Guess the animal")
 print("\nQuiz instructions:")
-print("You have 3 lives through out the game")
-print("Lives are accessible when you miss the question")
+print("You have 3 lives throughout the game")
+print("Which you can use when you miss a question")
 print("Quiz ends when you miss the question and don't have any live to sustain the quiz")
-print("You can enter 'q' to end the quiz at anytime")
+print("Or you can enter 'q' to end the quiz at anytime")
 print("Goodluck!\n")
 
 while True:

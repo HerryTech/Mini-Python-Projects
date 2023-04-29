@@ -11,10 +11,9 @@ def checkAnswer(guess, answer):
         print("Correct!")
         score += 1   
     else:
+        print("\nOops, that was a wrong guess")
         if lives != 0 & lives <= 3:
-            print(f"You have {lives} left")
-            print("Enter 'yes' to use it or 'q' to quit the quiz")
-            response = input("> ")
+            response = input("Try again: ")
             if response == "q":
                 exit(0)
             elif response == "yes":
