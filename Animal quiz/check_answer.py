@@ -1,12 +1,15 @@
 from sys import exit
+#from animal_quiz import showQuestion
 
 def checkAnswer(guess, answer):
     score = 0
     lives = 3
 
-    if guess == answer:
+    if guess == "q":
+        exit(0)
+    elif guess == answer:
         print("Correct!")
-        score += 1
+        score += 1   
     else:
         if lives != 0 & lives <= 3:
             print(f"You have {lives} left")
