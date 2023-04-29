@@ -7,6 +7,6 @@ questionAndAnswer = {
     "Which animal has the highest blood pressure?" : "Giraffe",
     "How many species of wild cats are there?" : 14,
     "What does the bat use to navigate and locate its prey?" : "Echolocation",
-    "What is the largest land mammal?" : "African Bush Elephant",
+    "What is the largest land mammal?" : "African bush elephant",
     "Does a male lion join the hunt?" : "yes"
 }
