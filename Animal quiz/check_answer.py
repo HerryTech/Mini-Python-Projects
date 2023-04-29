@@ -14,14 +14,8 @@ def checkAnswer(guess, answer):
         print("\nOops, that was a wrong guess")
         if lives != 0 & lives <= 3:
             response = input("Try again: ")
-            if response == "q":
-                exit(0)
-            elif response == "yes":
+            if response != "q":
                 lives -= 1
-                print("Now you can try again")
-                guess = input("> ")
-            else:
-                print("Not valid!. Enter 'yes' or 'q'")
         else:
             print("You have no lives again. Game over!")
             exit(0)
