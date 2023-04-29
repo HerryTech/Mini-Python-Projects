@@ -1,4 +1,6 @@
 from check_answer import checkAnswer
+from questions_answers import questionAndAnswer
+from random import choice
 
 print("Guess the animal")
 print("\nQuiz instructions:")
@@ -7,6 +9,6 @@ print("Lives are accessible when you miss the question")
 print("Quiz ends when you miss the question and don't have any live to sustain the quiz")
 print("Goodluck!")
 
-question = "\nWhat is the slowest animal on land?: "
-answer = input(question)
-checkAnswer(question, answer)
+question, answer = choice(list(questionAndAnswer.items()))
+guess = input(question)
+checkAnswer(guess, answer)

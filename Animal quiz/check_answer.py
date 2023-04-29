@@ -1,9 +1,10 @@
 from sys import exit
-score = 0
-lives = 3
 
-def checkAnswer(question, answer):
-    if question == answer:
+def checkAnswer(guess, answer):
+    score = 0
+    lives = 3
+
+    if guess == answer:
         print("Correct!")
         score += 1
     else:
@@ -16,7 +17,7 @@ def checkAnswer(question, answer):
             elif response == "yes":
                 lives -= 1
                 print("Now you can try again")
-                print(question)
+                guess = input("> ")
             else:
                 print("Not valid!. Enter 'yes' or 'q'")
         else:
