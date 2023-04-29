@@ -15,9 +15,10 @@ def checkAnswer(guess, answer):
             print("\nOops, that was a wrong guess")
             if lives != 0 & lives <= 3:
                 response = input("Try again: ")
-                lives -= 1
                 if response != "q":
-                    exit(0)
+                    lives -= 1
+                else:
+                    exit(0)    
             else:
                 print("\nYou have no lives again")
                 print(f"Your score is {score}. Game over!")
