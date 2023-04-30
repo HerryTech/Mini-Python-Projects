@@ -1,5 +1,4 @@
 from sys import exit
-#from animal_quiz import showQuestion
 
 score = 0
 lives = 3
