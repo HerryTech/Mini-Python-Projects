@@ -1,7 +1,7 @@
 from random import shuffle
 from sys import exit
 
-def gameIntro():
+def theGame():
     print("Guess the number game")
     print("I am thinking of a 3-digit number. Try to guess what it is")
     print("\nGame instructions:")
@@ -56,8 +56,7 @@ def guessNumber():
             else:
                 exit(0)
             
-gameIntro()
-guessNumber()
+theGame()
 
         
 
