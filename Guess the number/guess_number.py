@@ -1,4 +1,5 @@
 from random import shuffle
+from sys import exit
 
 def gameIntro():
     print("Guess the number game")
@@ -11,8 +12,9 @@ def gameIntro():
     
     response = input("\nAre you ready? Y/n: ")
     if response.lower() == "y":
-        print("\nI have thought of a number")
-        print("You have 10 guesses to get it")
+        guessNumber()
+    else:
+        exit(0)
 
 def getSecretNumber():
     max_number = 3
@@ -24,6 +26,8 @@ def getSecretNumber():
     return secret_number
 
 def guessNumber():
+    print("\nI have thought of a number")
+    print("You have 10 guesses to get it")
     maxGuess = 10
     numOfTrial = 1
     guess = ""
@@ -34,12 +38,16 @@ def guessNumber():
         maxGuess -= 1
         numOfTrial += 1
         if secretNumber == guess:
-            print("Correct! You guess right")
-
-gameIntro()          
-guessNumber()     
-
-
+            print("\nCorrect! You guess right")
+            print("Do you want to play again? yes or no")
+            response = input("> ")
+            if response == "yes":
+                guessNumber()
+            else:
+                exit(0)
+            
+gameIntro()
+guessNumber()
 
         
 
