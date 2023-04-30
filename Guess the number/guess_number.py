@@ -35,8 +35,11 @@ def guessNumber():
     print(secretNumber)
     while (maxGuess != 0 & maxGuess <= 10) & (guess != secretNumber):
         guess = input(f"Guess #{numOfTrial}: ")
-        guessClue = getClue(guess, secretNumber)
-        print(guessClue)
+        try:
+            guessClue = getClue(guess, secretNumber)
+            print(guessClue)
+        except:
+            print(f"The number is longer than {len(secretNumber)}")
         maxGuess -= 1
         numOfTrial += 1
         if secretNumber == guess:
