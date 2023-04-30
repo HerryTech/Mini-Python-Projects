@@ -10,7 +10,6 @@ print("Quiz ends when you miss the question and don't have any live to sustain t
 print("Or you can enter 'q' to end the quiz at anytime")
 print("Goodluck!\n")
 
-score = 0
 while True:
     question, answer = choice(list(questionAndAnswer.items()))
     guess = input(f"{question}: ")
