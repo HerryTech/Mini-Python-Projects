@@ -11,7 +11,7 @@ def checkAnswer(guess, answer):
         score += 1   
         print(f"Correct!. Your score is {score}")
     else:
-        print("\nOops, that was a wrong guess!")
+        print("\nOops, that was a wrong guess!!!")
         while (lives != 0 & lives <=3) & (guess.lower() != answer.lower()):
                 guess = input("Try again: ")
                 lives -= 1
