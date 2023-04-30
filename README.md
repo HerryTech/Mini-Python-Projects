@@ -1,5 +1,5 @@
 # Mini Python Projects
-### a means to practice what I've learnt so far in python
+### A means to practice what I've learnt so far in python
 
 **1. Animal Quiz:**
 **Random animal questions to answer**
