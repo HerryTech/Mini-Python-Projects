@@ -26,18 +26,19 @@ def getSecretNumber():
     return secret_number
 
 def guessNumber():
+    guess = ""
     print("\nI have thought of a number")
     print("You have 10 guesses to get it")
     maxGuess = 10
     numOfTrial = 1
-    guess = ""
     secretNumber = getSecretNumber()
     print(secretNumber)
     while (maxGuess != 0 & maxGuess <= 10) & (guess != secretNumber):
         guess = input(f"Guess #{numOfTrial}: ")
+        guessClue = getClue(guess, secretNumber)
+        print(guessClue)
         maxGuess -= 1
         numOfTrial += 1
-        print(maxGuess)
         if secretNumber == guess:
             print("\nCorrect! You guess right")
             print("Do you want to play again? yes or no")
@@ -55,8 +56,19 @@ def guessNumber():
                 guessNumber()
             else:
                 exit(0)
-            
-theGame()
 
+def getClue(guess, secretNumber):
+    clue = []
+    for i in range(len(guess)):
+       if guess[i] == secretNumber[i] :
+           clue.append("Peace")
+       elif guess[i] in secretNumber:
+           clue.append("Love")
+       else:
+           clue.append("...")
+    clue.sort()
+    return " ".join(clue)
+
+theGame()
         
 
