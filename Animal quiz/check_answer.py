@@ -20,6 +20,8 @@ def checkAnswer(guess, answer):
                 if guess.lower() == answer.lower():
                     score += 1
                     print(f"Correct!. Your score is {score}")
-
+                if (lives == 0) & (guess.lower() != answer.lower()):
+                    print("Wrong answer")
+                    print("You have no more lives. Game over!")
                     
                 
