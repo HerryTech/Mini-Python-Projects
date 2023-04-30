@@ -10,7 +10,8 @@ print("You have 10 guesses")
 
 response = input("\nAre you ready?Y/n: ")
 if response.lower() == "y":
-    print(2)
+    print("I have thought of a number")
+    guess = input("Guess the number?: ")
 else:
     exit(0)
 
