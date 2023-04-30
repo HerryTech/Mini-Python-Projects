@@ -37,8 +37,18 @@ def guessNumber():
         guess = input(f"Guess #{numOfTrial}: ")
         maxGuess -= 1
         numOfTrial += 1
+        print(maxGuess)
         if secretNumber == guess:
             print("\nCorrect! You guess right")
+            print("Do you want to play again? yes or no")
+            response = input("> ")
+            if response == "yes":
+                guessNumber()
+            else:
+                exit(0)
+        if (maxGuess == 0) & (guess != secretNumber):
+            print("\nYou ran out of guesses")
+            print(f"The number is {secretNumber}")
             print("Do you want to play again? yes or no")
             response = input("> ")
             if response == "yes":
