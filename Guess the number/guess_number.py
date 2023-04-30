@@ -5,9 +5,9 @@ def theGame():
     print("Guess the number game")
     print("I am thinking of a 3-digit number. Try to guess what it is")
     print("\nGame instructions:")
-    print("Love means One digit is correct but in the wrong position")
-    print("Peace means One digit is correct and in the right position")
-    print("Joy means No digit is correct")
+    print("RW means One digit is correct but in the wrong position")
+    print("RR means One digit is correct and in the right position")
+    print("WW means No digit is correct")
     print("You have 10 guesses")
     
     response = input("\nAre you ready? Y/n: ")
@@ -32,7 +32,6 @@ def guessNumber():
     maxGuess = 10
     numOfTrial = 1
     secretNumber = getSecretNumber()
-    print(secretNumber)
     while (maxGuess != 0 & maxGuess <= 10) & (guess != secretNumber):
         guess = input(f"Guess #{numOfTrial}: ")
         try:
@@ -64,11 +63,11 @@ def getClue(guess, secretNumber):
     clue = []
     for i in range(len(guess)):
        if guess[i] == secretNumber[i] :
-           clue.append("Peace")
+           clue.append("RR")
        elif guess[i] in secretNumber:
-           clue.append("Love")
+           clue.append("RW")
        else:
-           clue.append("...")
+           clue.append("WW")
     clue.sort()
     return " ".join(clue)
 
