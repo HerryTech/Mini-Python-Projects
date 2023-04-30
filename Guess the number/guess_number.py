@@ -13,7 +13,9 @@ print("You have 10 guesses")
 response = input("\nAre you ready? Y/n: ")
 if response.lower() == "y":
     print("I have thought of a number")
+    print("You have 10 guesses to get it")
     the_number = getSecretNumber()
+    print(the_number)
     guess = input("Guess the number?: ")
 else:
     exit(0)
