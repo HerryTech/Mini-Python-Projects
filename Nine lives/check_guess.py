@@ -1,5 +1,8 @@
-def checkGuess(guess, secretWord, clue):
+def checkGuessWord(guessWord, secretWord, clue):
     for i in range(len(secretWord)):
-        if guess in secretWord[i]:
-            clue[i] = guess
+        if guessWord == secretWord[i]:
+            clue[i] = guessWord
+    return clue
+
         
+    
