@@ -10,17 +10,24 @@ def generatePassword():
     num = randint(0, 99)
     punct = choice(punctuation)
     password = adj + noun + str(num) + punct
-    return password
+    return password  
 
-generatePassword()  
-
-name = input("What should I call you?: ")
-print(f"\n{name}, Welcome to password generator!")
-print("I will help you create strong and easy to remember password")
-print("Are you ready?")
-response = input("Enter 'yes' to generate or 'q' to quit: ")
-if response == "yes":
-    pwd = generatePassword()
-    print(pwd)
-else:
-    exit(0)
+def showPassword():
+    name = input("What should I call you?: ")
+    print(f"\n{name}, Welcome to password generator!")
+    print("I will help you create strong and easy to remember password")
+    print("\nAre you ready?")
+    response = input("Enter 'yes' to generate or 'q' to quit: ")
+    if response == "yes":
+        pwd = generatePassword()
+        print(f"\nHere is your password: {pwd}")
+        print("\nDo you like the password or would you like to generate a new one?")
+        response = input("'y' to generate a new one, 'no' to quit y/n: ")
+        if response == "y":
+            print(f"\nHere is your password: {pwd}")
+        else:
+            exit(0)
+    else:
+        exit(0)
+        
+showPassword()
