@@ -25,7 +25,7 @@ def showPassword():
                 print("\nDo you like the password or would you like to generate a new one?")
                 response = input("'y' to generate a new one, 'no' to quit y/n: ")
                 if response == "y":
-                    print(f"\nHere is your password: {pwd}")
+                    print(f"\nHere is your new password: {pwd}")
                 else:
                     exit(0)
     else:
