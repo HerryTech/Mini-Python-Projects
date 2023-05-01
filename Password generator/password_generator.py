@@ -19,14 +19,15 @@ def showPassword():
     print("\nAre you ready?")
     response = input("Enter 'yes' to generate or 'q' to quit: ")
     if response == "yes":
-        pwd = generatePassword()
-        print(f"\nHere is your password: {pwd}")
-        print("\nDo you like the password or would you like to generate a new one?")
-        response = input("'y' to generate a new one, 'no' to quit y/n: ")
-        if response == "y":
+            pwd = generatePassword()
             print(f"\nHere is your password: {pwd}")
-        else:
-            exit(0)
+            while True:
+                print("\nDo you like the password or would you like to generate a new one?")
+                response = input("'y' to generate a new one, 'no' to quit y/n: ")
+                if response == "y":
+                    print(f"\nHere is your password: {pwd}")
+                else:
+                    exit(0)
     else:
         exit(0)
         
