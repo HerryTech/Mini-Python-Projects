@@ -1,6 +1,6 @@
 from random import choice, randint
 from string import punctuation
-from password_words import adjectives, nouns, punctuations
+from password_words import adjectives, nouns
 from sys import exit
 
 
@@ -8,7 +8,7 @@ def generatePassword():
     adj = choice(adjectives)
     noun = choice(nouns)
     num = randint(0, 99)
-    punct = choice(punctuations)
+    punct = choice(punctuation)
     password = adj + noun + str(num) + punct
     return password  
 
