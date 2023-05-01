@@ -20,6 +20,7 @@ print("I will help you create strong and easy to remember password")
 print("Are you ready?")
 response = input("Enter 'yes' to generate or 'q' to quit: ")
 if response == "yes":
-    generatePassword()
+    pwd = generatePassword()
+    print(pwd)
 else:
     exit(0)
