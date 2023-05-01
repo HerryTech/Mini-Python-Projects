@@ -10,7 +10,7 @@ def generatePassword():
     num = randint(0, 99)
     punct = choice(punctuation)
     password = adj + noun + str(num) + punct
-    print(password)
+    return password
 
 generatePassword()  
 
