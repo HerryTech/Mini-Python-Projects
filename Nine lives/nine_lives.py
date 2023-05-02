@@ -8,7 +8,7 @@ clue = []
 for i in range(len(secret_word)):
     clue.append("?")
 
-hearts = u'\u2764' * lives
+heart_symbol = u'\u2764'
 
 def checkGuessWord(guessWord, secretWord, clue):
     for i in range(len(secretWord)):
@@ -27,11 +27,9 @@ if response == "y":
     print(secret_word)
     while lives > 0:
         print(f"\n{clue}")
-        print(f"lives left: {hearts}")
-        guess_word = input("\nGuess a letter: ")
-        check = checkGuessWord(guess_word, secret_word, clue)
-        print(check)
-        print(f"lives left: {hearts}") 
+        print("Lives left: " + heart_symbol * lives)
+        guess_word = input("Guess a letter: ")
+        checkGuessWord(guess_word, secret_word, clue) 
         if guess_word not in secret_word:
             print("\nIncorrect! You lose a life")
             lives -= 1
