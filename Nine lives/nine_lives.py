@@ -30,7 +30,7 @@ if response == "y":
         print("Lives left: " + heart_symbol * lives)
         guess_word = input("Guess a letter: ")
         checkGuessWord(guess_word, secret_word, clue) 
-        if (guess_word not in secret_word) & (lives != 0):
+        if guess_word not in secret_word:
             print("\nIncorrect! You lose a life")
             lives -= 1
         if lives == 0:
