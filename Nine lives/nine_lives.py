@@ -16,6 +16,7 @@ def theGame():
         clue.append("?")
 
     heart_symbol = chr(9829)
+    
     while lives > 0:
         print(f"\n{clue}")
         print("Lives left: " + heart_symbol * lives)
