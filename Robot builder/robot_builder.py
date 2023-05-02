@@ -6,6 +6,7 @@ def rectangle(horizontal, vertical, color):
     t.color(color)
     t.begin_fill()
     t.shape("turtle")
+    t.speed("slowest")
     
     
     for counter in range(1, 3):
@@ -16,10 +17,16 @@ def rectangle(horizontal, vertical, color):
         
     t.end_fill()
     t.penup()
-    t.speed("slowest")
-    t.bgcolor("Doger blue")
     
 #feet
 t.goto(-100, -150)
 rectangle(50, 20, "blue")
+t.goto(-30, -150)
+rectangle(50, 20, "blue")
+
+#feet
+t.goto(-25, -50)
+rectangle(15, 100, "grey")
+t.goto(-25, -50)
+rectangle(15, 100, "grey")
 
