@@ -25,12 +25,13 @@ print("Lose all your lives and it's game over")
 response = input("\nAre you ready? y/n: ")
 if response == "y":
     while lives > 0:
-        print(secret_word)
         print(f"\n{clue}")
         print("Lives left: " + heart_symbol * lives)
         guess_word = input("Guess a letter: ")
+        if len(guess_word) == 2:
+            print("\nNope, one letter at a time")
         checkGuessWord(guess_word, secret_word, clue) 
-        if guess_word not in secret_word:
+        if (len(guess_word) == 1) & (guess_word not in secret_word):
             print("\nIncorrect! You lose a life")
             lives -= 1
         if lives == 0:
