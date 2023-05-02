@@ -26,7 +26,6 @@ response = input("\nAre you ready? y/n: ")
 if response == "y":
     print(secret_word)
     while lives > 0:
-        str = ""
         print(f"\n{clue}")
         print("Lives left: " + heart_symbol * lives)
         guess_word = input("Guess a letter: ")
@@ -36,8 +35,8 @@ if response == "y":
             lives -= 1
         if lives == 0:
             print("Game over!")
-        if str.join(clue) == secret_word:
-            print(f"\n{clue} = {secret_word}")
+        if "".join(clue) == secret_word:
+            print(f"\nThe secret word = {clue}")
             print("Correct! You won")
             exit(0)
 else:
