@@ -16,9 +16,16 @@ def checkGuessWord(guessWord, secretWord, clue):
             clue[i] = guessWord
     return clue
   
-def theGame():
-    global lives
+
+print("Guess the secret word game")
+
+print("\nGuess the secret word, one letter at a time")
+print("Choose your letter carefully because you have nine lives")
+print("Lose all your lives and it's game over")
+response = input("\nAre you ready? y/n: ")
+if response == "y":
     while lives > 0:
+        print(secret_word)
         print(f"\n{clue}")
         print("Lives left: " + heart_symbol * lives)
         guess_word = input("Guess a letter: ")
@@ -31,23 +38,9 @@ def theGame():
         if "".join(clue) == secret_word:
             print(f"\nThe secret word = {clue}")
             print("Correct! You won")
-            response = input("\nDo you want to play again? y/n: ")
-            if response == "y":
-                theGame()
-            else:
-                exit(0)
-                
-def playGame():
-    print("Guess the secret word game")
-    print("\nGuess the secret word, one letter at a time")
-    print("Choose your letter carefully because you have nine lives")
-    print("Lose all your lives and it's game over")
-    response = input("\nAre you ready? y/n: ")
-    if response == "y":
-        theGame()
-    else:
-        exit(0)                
+            exit(0)
+else:
+    exit(0)
 
-playGame()
 
 
