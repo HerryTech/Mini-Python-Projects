@@ -15,7 +15,7 @@ def theGame():
     for i in range(len(secret_word)):
         clue.append("?")
 
-    heart_symbol = u'\u2665'
+    heart_symbol = chr(9829)
     while lives > 0:
         print(f"\n{clue}")
         print("Lives left: " + heart_symbol * lives)
