@@ -10,11 +10,6 @@ for i in range(len(secret_word)):
 
 hearts = u'\u2764' * lives
 
-def playOn():
-    print(f"\n{clue}")
-    print(f"lives left: {hearts}")
-    guess_word = input("\nGuess a letter: ")
-    
 def checkGuessWord(guessWord, secretWord, clue):
     for i in range(len(secretWord)):
         if guessWord == secretWord[i]:
@@ -30,9 +25,10 @@ print("Lose all your lives and it's game over")
 response = input("\nAre you ready? y/n: ")
 if response == "y":
     print(secret_word)
-    
     while lives > 0:
-        
+        print(f"\n{clue}")
+        print(f"lives left: {hearts}")
+        guess_word = input("\nGuess a letter: ")
         check = checkGuessWord(guess_word, secret_word, clue)
         print(check)
         print(f"lives left: {hearts}") 
