@@ -2,14 +2,6 @@ from random import choice
 from sys import exit
 from nine_lives_words import words
 
-lives = 9
-secret_word = choice(words)
-clue = []
-for i in range(len(secret_word)):
-    clue.append("?")
-
-heart_symbol = u'\u2764'
-
 def checkGuessWord(guessWord, secretWord, clue):
     for i in range(len(secretWord)):
         if guessWord == secretWord[i]:
@@ -17,10 +9,13 @@ def checkGuessWord(guessWord, secretWord, clue):
     return clue
 
 def theGame():
-    global lives
-    global secret_word
-    global clue
-    global heart_symbol
+    lives = 9
+    secret_word = choice(words)
+    clue = []
+    for i in range(len(secret_word)):
+        clue.append("?")
+
+    heart_symbol = u'\u2764'
     while lives > 0:
         print(f"\n{clue}")
         print("Lives left: " + heart_symbol * lives)
