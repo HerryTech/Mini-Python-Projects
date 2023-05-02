@@ -1,5 +1,4 @@
 # Mini Python Projects
-### A means to practice what I've learnt so far in python
 
 **Animal Quiz:** Random animal questions to answer. Users have 3 chance to stay in the quiz if they miss any question
 
