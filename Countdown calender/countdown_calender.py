@@ -25,6 +25,7 @@ def days_between_dates(date1, date2):
     return number_of_days[0]
       
 events = get_events()
+events.sort(key = lambda x: x[1])
 today = date.today()
 
 vertical_space = 100
