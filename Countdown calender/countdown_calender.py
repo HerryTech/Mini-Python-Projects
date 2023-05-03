@@ -5,7 +5,7 @@ window = Tk()
 canvas = Canvas(window, width = 800, height = 800, bg = "black")
 canvas.pack()
 canvas.create_text(100, 50, anchor = "w", fill = "orange", font= "Arial 28 bold underline", text ="Holidays countdown calender")
-window.mainloop()
+#window.mainloop()
 
 def get_events():
     list_events = []
@@ -14,6 +14,10 @@ def get_events():
         for line in f:
             line = line.strip("\n")
             current_event = line.split(",")
-            print(current_event)
+            event_date = datetime.strptime(current_event[-1], "%d/%m/%y").date()
+            print(event_date)
         
 get_events()
+
+#datE = date(2023, 5, 3).weekday()
+#print(datE)
