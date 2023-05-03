@@ -22,8 +22,8 @@ def get_events():
       
 def days_between_dates(date1, date2):
     time_between = str(date1 - date2)
-    #number_of_days = time_between.split(" ")
-    return time_between
+    number_of_days = time_between.split(" ")
+    return number_of_days[0]
     
 
     
