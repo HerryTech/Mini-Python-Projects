@@ -33,4 +33,5 @@ today = date.today()
 for event in events:
     event_name = event[0]
     days_until_event = days_between_dates(event[1], today)
-    print(days_until_event)
+    display = f"It's {days_until_event} days until {event_name}"
+    print(display)
