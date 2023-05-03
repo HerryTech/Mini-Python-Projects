@@ -34,7 +34,7 @@ for event in events:
     event_name = event[0]
     days_until_event = days_between_dates(event[1], today)
     display = f"It's {days_until_event} days until {event_name}"
-    canvas.create_text(100, vertical_space, anchor = "w", fill = "white", font = "Arial 12 bold", text = display)
+    canvas.create_text(100, vertical_space, anchor = "w", fill = "white", activefill = "lightblue", font = "Arial 12 bold", text = display)
     vertical_space += 50
 
 window.mainloop()
