@@ -6,3 +6,5 @@
 
 **Nine lives:** Users have to guess the secret word, one letter at a time. If the user's guess is wrong, the user lose a life. There are only nine lives. The is game over when the user lose all lives
 
+**Countdown calender:** When you’re looking forward to an exciting event, it helps to know how much longer you have to wait. This project use Python’s Tkinter module to build a handy program that counts down to the big day.
+
