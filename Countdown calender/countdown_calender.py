@@ -15,9 +15,11 @@ def get_events():
             line = line.strip("\n")
             current_event = line.split(",")
             event_date = datetime.strptime(current_event[-1], "%d/%m/%y").date()
-            print(event_date)
+            list_events.append(current_event)
+    return list_events
+    
         
-get_events()
-
-#datE = date(2023, 5, 3).weekday()
-#print(datE)
+def days_between_dates(date1, date2):
+    time_between = str(date1 - date2)
+    
+events = get_events()
