@@ -5,7 +5,6 @@ window = Tk()
 canvas = Canvas(window, width = 800, height = 800, bg = "black")
 canvas.pack()
 canvas.create_text(100, 50, anchor = "w", fill = "orange", font= "Arial 28 bold underline", text ="Holidays countdown calender")
-#window.mainloop()
 
 def get_events():
     list_events = []
@@ -24,9 +23,7 @@ def days_between_dates(date1, date2):
     time_between = str(date1 - date2)
     number_of_days = time_between.split(" ")
     return number_of_days[0]
-    
-
-    
+      
 events = get_events()
 today = date.today()
 
@@ -34,4 +31,6 @@ for event in events:
     event_name = event[0]
     days_until_event = days_between_dates(event[1], today)
     display = f"It's {days_until_event} days until {event_name}"
-    print(display)
+    canvas.create_text(100, 100, anchor = "w", fill = "white", font = "Arial 28 bold", text = display)
+
+window.mainloop()
