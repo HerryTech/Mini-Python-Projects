@@ -1,5 +1,5 @@
 from requests import get
-from tkinter import Tk, simpledialog, messagebox
+from tkinter import Tk, simpledialog, messagebox, Canvas
 import json
 
 name = "Nigeria"
@@ -8,6 +8,13 @@ r = get(url)
 response = r.json()
 filename = "Country_capital/country.json"
 with open(filename, "w") as f:
-    json.dump(response, f, indent = 4)
-    
+    country = json.dump(response, f, indent = 4)
+
+with open(filename) as f:
+    country = json.load(f)
+         
+
+window = Tk()
+
+window.mainloop()
 
