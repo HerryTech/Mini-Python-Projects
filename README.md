@@ -8,3 +8,4 @@
 
 **Countdown calender:** When you’re looking forward to an exciting event, it helps to know how much longer you have to wait. This project use Python’s Tkinter module to build a handy program that counts down to some holidays.
 
+**Password generator:** This generates memorable passwords to help keep user's private information safe
