@@ -1,5 +1,5 @@
 from requests import get
-from tkinter import Tk, simpledialog, messagebox, Canvas
+from tkinter import simpledialog, messagebox, Canvas
 import json
 
 while True:
