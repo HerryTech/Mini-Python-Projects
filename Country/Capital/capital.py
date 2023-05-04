@@ -1,7 +1,7 @@
 from requests import get
 import json
 
-url = "https://restcountries.com/v3.1/all"
+url = "https://restcountries.com/v3.1/name/nigeria"
 
 r = get(url)
 response = r.json()
@@ -12,7 +12,7 @@ with open(filename, "w") as f:
 #countries = response.name 
 #for country in 
 
-#print(response[1]["name"]["common"])
+print(response[0]["capital"][0])
 
 print(len(response))
-#print(response.items)
+
