@@ -34,6 +34,9 @@ def swap_letters(message):
     new_message = "".join(swapped_letters)
     return(new_message)     
 
+#n = swap_letters("meet me at the swings in the park at noon")
+#print(n) #emtem etat ehs iwgn snit ehp ra ktan ooxn
+
 while True:
     task = get_task()
     if task == "encrypt":
@@ -41,8 +44,9 @@ while True:
         encrypt = swap_letters(message)
         messagebox.showinfo("Encrypted Message", f"Ciphertext of the secret message is: {encrypt}")
     elif task == "decrypt":
-        message = get_message()
-        decrypt = swap_letters(message)
-        messagebox.showinfo("Decrypted Message", f"Plaintext of the secret message is: {decrypt}")
+        #message = get_message()
+        #decrypt = swap_letters(message)
+        messagebox.showinfo("Decrypted Message", f"Plaintext of the secret message is: {message}")
     else:
         break
+        
