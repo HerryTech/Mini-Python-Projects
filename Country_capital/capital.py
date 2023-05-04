@@ -1,5 +1,5 @@
 from requests import get
-from tkinter import simpledialog, messagebox, Canvas
+from tkinter import Tk, simpledialog, messagebox, Canvas
 import json
 
 while True:
@@ -22,5 +22,6 @@ while True:
         capital = country[0]["capital"][0]
          
         messagebox.showinfo("Answer", f"The capital city of {name} is {capital}")
+        
 
 
