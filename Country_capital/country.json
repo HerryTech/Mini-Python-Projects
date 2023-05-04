@@ -1,220 +1,219 @@
 [
     {
         "name": {
-            "common": "Canada",
-            "official": "Canada",
+            "common": "Algeria",
+            "official": "People's Democratic Republic of Algeria",
             "nativeName": {
-                "eng": {
-                    "official": "Canada",
-                    "common": "Canada"
-                },
-                "fra": {
-                    "official": "Canada",
-                    "common": "Canada"
+                "ara": {
+                    "official": "\u0627\u0644\u062c\u0645\u0647\u0648\u0631\u064a\u0629 \u0627\u0644\u062f\u064a\u0645\u0642\u0631\u0627\u0637\u064a\u0629 \u0627\u0644\u0634\u0639\u0628\u064a\u0629 \u0627\u0644\u062c\u0632\u0627\u0626\u0631\u064a\u0629",
+                    "common": "\u0627\u0644\u062c\u0632\u0627\u0626\u0631"
                 }
             }
         },
         "tld": [
-            ".ca"
+            ".dz",
+            "\u0627\u0644\u062c\u0632\u0627\u0626\u0631."
         ],
-        "cca2": "CA",
-        "ccn3": "124",
-        "cca3": "CAN",
-        "cioc": "CAN",
+        "cca2": "DZ",
+        "ccn3": "012",
+        "cca3": "DZA",
+        "cioc": "ALG",
         "independent": true,
         "status": "officially-assigned",
         "unMember": true,
         "currencies": {
-            "CAD": {
-                "name": "Canadian dollar",
-                "symbol": "$"
+            "DZD": {
+                "name": "Algerian dinar",
+                "symbol": "\u062f.\u062c"
             }
         },
         "idd": {
-            "root": "+1",
+            "root": "+2",
             "suffixes": [
-                ""
+                "13"
             ]
         },
         "capital": [
-            "Ottawa"
+            "Algiers"
         ],
         "altSpellings": [
-            "CA"
+            "DZ",
+            "Dzayer",
+            "Alg\u00e9rie"
         ],
-        "region": "Americas",
-        "subregion": "North America",
+        "region": "Africa",
+        "subregion": "Northern Africa",
         "languages": {
-            "eng": "English",
-            "fra": "French"
+            "ara": "Arabic"
         },
         "translations": {
             "ara": {
-                "official": "\u0643\u0646\u062f\u0627",
-                "common": "\u0643\u0646\u062f\u0627"
+                "official": "\u0627\u0644\u062c\u0645\u0647\u0648\u0631\u064a\u0629 \u0627\u0644\u062f\u064a\u0645\u0642\u0631\u0627\u0637\u064a\u0629 \u0627\u0644\u0634\u0639\u0628\u064a\u0629 \u0627\u0644\u062c\u0632\u0627\u0626\u0631\u064a\u0629",
+                "common": "\u0627\u0644\u062c\u0632\u0627\u0626\u0631"
             },
             "bre": {
-                "official": "Kanada",
-                "common": "Kanada"
+                "official": "Republik Aljerian Demokratel ha Poblel",
+                "common": "Aljeria"
             },
             "ces": {
-                "official": "Kanada",
-                "common": "Kanada"
+                "official": "Al\u017e\u00edrsk\u00e1 demokratick\u00e1 a lidov\u00e1 republika",
+                "common": "Al\u017e\u00edrsko"
             },
             "cym": {
-                "official": "Canada",
-                "common": "Canada"
+                "official": "Gweriniaeth Ddemocrataidd Pobl Algeria",
+                "common": "Algeria"
             },
             "deu": {
-                "official": "Kanada",
-                "common": "Kanada"
+                "official": "Demokratische Volksrepublik Algerien",
+                "common": "Algerien"
             },
             "est": {
-                "official": "Kanada",
-                "common": "Kanada"
+                "official": "Al\u017eeeria Demokraatlik Rahvavabariik",
+                "common": "Al\u017eeeria"
             },
             "fin": {
-                "official": "Kanada",
-                "common": "Kanada"
+                "official": "Algerian demokraattinen kansantasavalta",
+                "common": "Algeria"
             },
             "fra": {
-                "official": "Canada",
-                "common": "Canada"
+                "official": "R\u00e9publique d\u00e9mocratique et populaire d'Alg\u00e9rie",
+                "common": "Alg\u00e9rie"
             },
             "hrv": {
-                "official": "Kanada",
-                "common": "Kanada"
+                "official": "Narodna Demokratska Republika Al\u017eir",
+                "common": "Al\u017eir"
             },
             "hun": {
-                "official": "Kanada",
-                "common": "Kanada"
+                "official": "Alg\u00e9riai N\u00e9pi Demokratikus K\u00f6zt\u00e1rsas\u00e1g",
+                "common": "Alg\u00e9ria"
             },
             "ita": {
-                "official": "Canada",
-                "common": "Canada"
+                "official": "Repubblica popolare democratica di Algeria",
+                "common": "Algeria"
             },
             "jpn": {
-                "official": "\u30ab\u30ca\u30c0",
-                "common": "\u30ab\u30ca\u30c0"
+                "official": "\u30a2\u30eb\u30b8\u30a7\u30ea\u30a2\u4eba\u6c11\u6c11\u4e3b\u5171\u548c\u56fd",
+                "common": "\u30a2\u30eb\u30b8\u30a7\u30ea\u30a2"
             },
             "kor": {
-                "official": "\uce90\ub098\ub2e4",
-                "common": "\uce90\ub098\ub2e4"
+                "official": "\uc54c\uc81c\ub9ac \uc778\ubbfc \ubbfc\uc8fc \uacf5\ud654\uad6d",
+                "common": "\uc54c\uc81c\ub9ac"
             },
             "nld": {
-                "official": "Canada",
-                "common": "Canada"
+                "official": "Democratische Volksrepubliek Algerije",
+                "common": "Algerije"
             },
             "per": {
-                "official": "\u06a9\u0627\u0646\u0627\u062f\u0627",
-                "common": "\u06a9\u0627\u0646\u0627\u062f\u0627"
+                "official": "\u062c\u0645\u0647\u0648\u0631\u06cc \u062f\u0645\u0648\u06a9\u0631\u0627\u062a\u06cc\u06a9 \u062e\u0644\u0642 \u0627\u0644\u062c\u0632\u0627\u06cc\u0631",
+                "common": "\u0627\u0644\u062c\u0632\u0627\u06cc\u0631"
             },
             "pol": {
-                "official": "Kanada",
-                "common": "Kanada"
+                "official": "Algierska Republika Ludowo-Demokratyczna",
+                "common": "Algieria"
             },
             "por": {
-                "official": "Canad\u00e1",
-                "common": "Canad\u00e1"
+                "official": "Rep\u00fablica Argelina Democr\u00e1tica e Popular",
+                "common": "Arg\u00e9lia"
             },
             "rus": {
-                "official": "\u041a\u0430\u043d\u0430\u0434\u0430",
-                "common": "\u041a\u0430\u043d\u0430\u0434\u0430"
+                "official": "\u041d\u0430\u0440\u043e\u0434\u043d\u043e-\u0414\u0435\u043c\u043e\u043a\u0440\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u0410\u043b\u0436\u0438\u0440",
+                "common": "\u0410\u043b\u0436\u0438\u0440"
             },
             "slk": {
-                "official": "Kanada",
-                "common": "Kanada"
+                "official": "Al\u017e\u00edrska demokratick\u00e1 \u013eudov\u00e1 republika",
+                "common": "Al\u017e\u00edrsko"
             },
             "spa": {
-                "official": "Canad\u00e1",
-                "common": "Canad\u00e1"
+                "official": "Rep\u00fablica Argelina Democr\u00e1tica y Popular",
+                "common": "Argelia"
             },
             "srp": {
-                "official": "\u041a\u0430\u043d\u0430\u0434\u0430",
-                "common": "\u041a\u0430\u043d\u0430\u0434\u0430"
+                "official": "\u041d\u0430\u0440\u043e\u0434\u043d\u0430 \u0414\u0435\u043c\u043e\u043a\u0440\u0430\u0442\u0441\u043a\u0430 \u0420\u0435\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u0410\u043b\u0436\u0438\u0440",
+                "common": "\u0410\u043b\u0436\u0438\u0440"
             },
             "swe": {
-                "official": "Kanada",
-                "common": "Kanada"
+                "official": "Demokratiska folkrepubliken Algeriet",
+                "common": "Algeriet"
             },
             "tur": {
-                "official": "Kanada",
-                "common": "Kanada"
+                "official": "Cezayir Demokratik Halk Cumhuriyeti",
+                "common": "Cezayir"
             },
             "urd": {
-                "official": "\u06a9\u06cc\u0646\u06cc\u0688\u0627",
-                "common": "\u06a9\u06cc\u0646\u06cc\u0688\u0627"
+                "official": "\u0639\u0648\u0627\u0645\u06cc \u062c\u0645\u06c1\u0648\u0631\u06cc \u062c\u0645\u06c1\u0648\u0631\u06cc\u06c1 \u0627\u0644\u062c\u0632\u0627\u0626\u0631",
+                "common": "\u0627\u0644\u062c\u0632\u0627\u0626\u0631"
             },
             "zho": {
-                "official": "\u52a0\u62ff\u5927",
-                "common": "\u52a0\u62ff\u5927"
+                "official": "\u963f\u5c14\u53ca\u5229\u4e9a\u4eba\u6c11\u6c11\u4e3b\u5171\u548c\u56fd",
+                "common": "\u963f\u5c14\u53ca\u5229\u4e9a"
             }
         },
         "latlng": [
-            60.0,
-            -95.0
+            28.0,
+            3.0
         ],
         "landlocked": false,
         "borders": [
-            "USA"
+            "TUN",
+            "LBY",
+            "NER",
+            "ESH",
+            "MRT",
+            "MLI",
+            "MAR"
         ],
-        "area": 9984670.0,
+        "area": 2381741.0,
         "demonyms": {
             "eng": {
-                "f": "Canadian",
-                "m": "Canadian"
+                "f": "Algerian",
+                "m": "Algerian"
             },
             "fra": {
-                "f": "Canadienne",
-                "m": "Canadien"
+                "f": "Alg\u00e9rienne",
+                "m": "Alg\u00e9rien"
             }
         },
-        "flag": "\ud83c\udde8\ud83c\udde6",
+        "flag": "\ud83c\udde9\ud83c\uddff",
         "maps": {
-            "googleMaps": "https://goo.gl/maps/jmEVLugreeqiZXxbA",
-            "openStreetMaps": "https://www.openstreetmap.org/relation/1428125"
+            "googleMaps": "https://goo.gl/maps/RsAyAfyaiNVb8DpW8",
+            "openStreetMaps": "https://www.openstreetmap.org/relation/192756"
         },
-        "population": 38005238,
+        "population": 44700000,
         "gini": {
-            "2017": 33.3
+            "2011": 27.6
         },
-        "fifa": "CAN",
+        "fifa": "ALG",
         "car": {
             "signs": [
-                "CDN"
+                "DZ"
             ],
             "side": "right"
         },
         "timezones": [
-            "UTC-08:00",
-            "UTC-07:00",
-            "UTC-06:00",
-            "UTC-05:00",
-            "UTC-04:00",
-            "UTC-03:30"
+            "UTC+01:00"
         ],
         "continents": [
-            "North America"
+            "Africa"
         ],
         "flags": {
-            "png": "https://flagcdn.com/w320/ca.png",
-            "svg": "https://flagcdn.com/ca.svg",
-            "alt": "The flag of Canada is composed of a red vertical band on the hoist and fly sides and a central white square that is twice the width of the vertical bands. A large eleven-pointed red maple leaf is centered in the white square."
+            "png": "https://flagcdn.com/w320/dz.png",
+            "svg": "https://flagcdn.com/dz.svg",
+            "alt": "The flag of Algeria features two equal vertical bands of green and white. A five-pointed red star within a fly-side facing red crescent is centered over the two-color boundary."
         },
         "coatOfArms": {
-            "png": "https://mainfacts.com/media/images/coats_of_arms/ca.png",
-            "svg": "https://mainfacts.com/media/images/coats_of_arms/ca.svg"
+            "png": "https://mainfacts.com/media/images/coats_of_arms/dz.png",
+            "svg": "https://mainfacts.com/media/images/coats_of_arms/dz.svg"
         },
         "startOfWeek": "sunday",
         "capitalInfo": {
             "latlng": [
-                45.42,
-                -75.7
+                36.75,
+                3.05
             ]
         },
         "postalCode": {
-            "format": "@#@ #@#",
-            "regex": "^([ABCEGHJKLMNPRSTVXY]\\d[ABCEGHJKLMNPRSTVWXYZ]) ?(\\d[ABCEGHJKLMNPRSTVWXYZ]\\d)$ "
+            "format": "#####",
+            "regex": "^(\\d{5})$"
         }
     }
 ]
