@@ -12,8 +12,4 @@
 
 **Country_capital:** This program provides the user with the capital of any inputted country.
 
-def encrypt_message(message):
-    new_message = list(message)
-    new_message.sort()
-    new_message = "".join(new_message)
-    return new_message    
+**Secret message:** Changes the text of a message so that people who don’t know the secret methods can’t understand it.
