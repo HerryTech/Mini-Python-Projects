@@ -17,5 +17,8 @@ for i in range(6):
         button.grid(column = i, row = j)
         buttons[i, j] = button
         button_symbols[i, j] = symbols.pop()
+        
+def show_symbol():
+    pass
 
 #root.mainloop()
