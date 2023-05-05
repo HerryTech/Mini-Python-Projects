@@ -1,4 +1,5 @@
 from tkinter import simpledialog, messagebox
+from random import choice
 
 def get_task():
     task = simpledialog.askstring("Task", "Do you want to encrypt or decrypt a message?")
@@ -8,31 +9,22 @@ def get_message():
     messaage = simpledialog.askstring("Message", "Enter your secret message")
     return messaage
 
-def get_even_letters(message):
+def encrypt_msg(message):
+    alphabet = ["a", "b", "c", "d", "e", "f", "g"]
+    encrypted_msg = []
+    for letter in range(0, len(message)):
+        encrypted_msg.append(message[letter])
+        encrypted_msg.append(choice(alphabet))
+    new_msg = "".join(encrypted_msg)
+    return(new_msg)
+    
+def decrypt_msg(message):
     even_letters = []
-    for letter in range(len(message)):
+    for letter in range(0, len(message)):
         if letter % 2 == 0:
             even_letters.append(message[letter])
-    return even_letters
-
-def get_old_letters(message):
-    old_letters = []
-    for letter in range(len(message)):
-        if letter % 2 != 0:
-            old_letters.append(message[letter])
-    return old_letters
-    
-def swap_letters(message):
-    swapped_letters = []
-    if len(message) % 2 != 0:
-        message += "x"
-    old_letters = get_old_letters(message) 
-    even_letters = get_even_letters(message)
-    for letter in range(0, int(len(message) / 2)):
-        swapped_letters.append(old_letters[letter])
-        swapped_letters.append(even_letters[letter])
-    new_message = "".join(swapped_letters)
-    return(new_message)     
+    new_msg = "".join(even_letters)
+    print(new_msg)
 
 while True:
     task = get_task()
