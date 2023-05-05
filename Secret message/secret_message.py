@@ -24,17 +24,17 @@ def decrypt_msg(message):
         if letter % 2 == 0:
             even_letters.append(message[letter])
     new_msg = "".join(even_letters)
-    print(new_msg)
+    return new_msg
 
 while True:
     task = get_task()
     if task == "encrypt":
         message = get_message()
-        encrypt = swap_letters(message)
+        encrypt = encrypt_msg(message)
         messagebox.showinfo("Encrypted Message", f"Ciphertext of the secret message is: {encrypt}")
     elif task == "decrypt":
         message = get_message()
-        decrypt = swap_letters(message)
+        decrypt = decrypt_msg(message)
         messagebox.showinfo("Decrypted Message", f"Plaintext of the secret message is: {decrypt}")
     else:
         break
