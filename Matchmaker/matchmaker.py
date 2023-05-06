@@ -36,6 +36,6 @@ def show_symbol(i, j):
         previousY = j
         first_in_the_match = False
     elif previousX != i or previousY != j:
-        if buttons[previousX, previousY]["text"] != 
+        if buttons[previousX, previousY]["text"] != buttons[i, j]["text"]:
 
 root.mainloop()
