@@ -6,6 +6,9 @@ root.title('Matchmaker')
 root.resizable(width = False, height = False)
 
 buttons = {}
+first_in_the_match = True
+previousX = 0
+previousY = 0
 button_symbols = {}
 symbols = [chr(9986), chr(128383), chr(9989), chr(128393), chr(8987), chr(128194), chr(9997), chr(9996), chr(128077), chr(128078), chr(128528), chr(9992), chr(10065), chr(10066)]
 
