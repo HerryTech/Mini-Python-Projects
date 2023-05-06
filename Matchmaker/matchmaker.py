@@ -14,7 +14,7 @@ button_symbols = {}
 
 symbols = [chr(9986), chr(128383), chr(9989), chr(128393), chr(8987), chr(128194), chr(9997), chr(9996), chr(128077), chr(128078), chr(128528), chr(9992), chr(10065), chr(10066)]
 
-symbols = [u'']
+symbols = [u'\u2702', u'\u2702', u'\u2702']
 
 shuffle(symbols)
 
@@ -45,4 +45,4 @@ def show_symbol(i, j):
             buttons[previousX, previousY]["command"] = DISABLED
             buttons[i, j]["command"] = DISABLED
         first_in_the_match = True
-root.mainloop()
+#root.mainloop()
