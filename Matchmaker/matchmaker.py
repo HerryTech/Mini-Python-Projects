@@ -25,6 +25,9 @@ for i in range(6):
         button_symbols[i, j] = symbols.pop()
         
 def show_symbol():
-    pass
+    global first_in_the_match
+    global previousX
+    global previousY
+    buttons[i, j]["text"] = button_symbols[i, j]
 
 root.mainloop()
