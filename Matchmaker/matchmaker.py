@@ -39,5 +39,9 @@ def show_symbol(i, j):
         if buttons[previousX, previousY]["text"] != buttons[i, j]["text"]:
             time.sleep(0.5)
             buttons[previousX, previousY]["text"] = ""
+            buttons[i, j]["text"] = ""
+        else:
+            buttons[previousX, previousY]["command"] = DISABLED
+            buttons
 
 root.mainloop()
