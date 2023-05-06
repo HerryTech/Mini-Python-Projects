@@ -17,8 +17,8 @@ shuffle(symbols)
 
 #print(symbols)
 
-for i in range(2):
-    for j in range(2):
+for i in range(6):
+    for j in range(4):
         button = Button(command = lambda i = i, j = j : show_symbol(i, j), width = 3, height = 3)
         button.grid(column = i, row = j)
         buttons[i, j] = button
