@@ -29,5 +29,13 @@ def show_symbol(i, j):
     global previousX
     global previousY
     buttons[i, j]["text"] = button_symbols[i, j]
+    buttons[i, j].update_idletasks()
+    
+    if first_in_the_match:
+        previousX = i
+        previousY = j
+        first_in_the_match = False
+    elif previousX != i or previousY != j:
+        if 
 
 root.mainloop()
