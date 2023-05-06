@@ -1,5 +1,6 @@
 from random import shuffle
 from tkinter import Tk, Button, DISABLED
+import time
 
 root = Tk()
 root.title('Matchmaker')
