@@ -22,7 +22,7 @@ for i in range(6):
         button = Button(command = lambda i = i, j = j : show_symbol(i, j), width = 3, height = 3)
         button.grid(column = i, row = j)
         buttons[i, j] = button
-        #button_symbols[i, j] = symbols.pop()
+        button_symbols[i, j] = symbols.pop()
         
 def show_symbol():
     pass
