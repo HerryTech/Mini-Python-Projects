@@ -11,6 +11,8 @@ symbols = [chr(9986), chr(128383), chr(9989), chr(128393), chr(8987), chr(128194
 
 shuffle(symbols)
 
+print(symbols)
+
 for i in range(6):
     for j in range(4):
         button = Button(command = lambda i = i, j = j : show_symbol(i, j), width = 3, height = 3)
