@@ -17,14 +17,14 @@ shuffle(symbols)
 
 #print(symbols)
 
-for i in range(6):
-    for j in range(4):
-        button = Button(command = lambda i = i, j = j : show_symbol(i, j), width = 3, height = 3)
+for x in range(6):
+    for y in range(4):
+        button = Button(command = lambda x = x, y = y : show_symbol(i, j), width = 3, height = 3)
         button.grid(column = i, row = j)
         buttons[i, j] = button
         button_symbols[i, j] = symbols.pop()
         
-def show_symbol():
+def show_symbol(i, j):
     global first_in_the_match
     global previousX
     global previousY
