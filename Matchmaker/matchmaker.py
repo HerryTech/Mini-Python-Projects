@@ -28,7 +28,6 @@ def show_symbol(i, j):
     global previousI
     global previousJ
     buttons[i, j]["text"] = button_symbols[i, j]
-    print(buttons)
     buttons[i, j].update_idletasks()
     
     if first_in_the_match:
@@ -46,4 +45,4 @@ def show_symbol(i, j):
         first_in_the_match = True
     
 
-#root.mainloop()
+root.mainloop()
