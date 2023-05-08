@@ -47,4 +47,4 @@ def show_symbol(i, j):
             buttons[previousX, previousY]["command"] = DISABLED
             buttons[i, j]["command"] = DISABLED
         first_in_the_match = True
-#root.mainloop()
+root.mainloop()
