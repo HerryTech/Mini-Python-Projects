@@ -12,6 +12,6 @@
 
 **Country_capital:** This program provides the user with the capital of any inputted country.
 
-**Secret message:** Changes the text of a message so that people who don’t know the secret methods can’t understand it.
+**Secret message:** Change the text of a message so that people who don’t know the secret methods can’t understand it.
 
 **Matchmaker:** Users have to find pairs of matching symbols. See how quickly you can find all 12 matching pairs!
