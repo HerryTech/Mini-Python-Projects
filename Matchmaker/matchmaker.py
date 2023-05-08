@@ -21,13 +21,14 @@ for i in range(6):
         button = Button(command = lambda i = i, j = j : show_symbol(i, j), width = 10, height = 5)
         button.grid(column = i, row = j)
         buttons[i, j] = button
-        button_symbols[i, j] = symbols.pop()
-        
+        button_symbols[i, j] = symbols.pop() 
+   
 def show_symbol(i, j):
     global first_in_the_match
     global previousI
     global previousJ
     buttons[i, j]["text"] = button_symbols[i, j]
+    print(buttons)
     buttons[i, j].update_idletasks()
     
     if first_in_the_match:
@@ -43,4 +44,6 @@ def show_symbol(i, j):
             buttons[previousI, previousJ]["command"] = DISABLED
             buttons[i, j]["command"] = DISABLED
         first_in_the_match = True
-root.mainloop()
+    
+
+#root.mainloop()
