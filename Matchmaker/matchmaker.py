@@ -16,11 +16,9 @@ symbols = [u'\u2702', u'\u2702', u'\u2705', u'\u2705', u'\u2708', u'\u2708', u'\
 
 shuffle(symbols)
 
-print(symbols)
-
 for i in range(6):
     for j in range(4):
-        button = Button(command = lambda i = i, j = j : show_symbol(i, j), width = 3, height = 3)
+        button = Button(command = lambda i = i, j = j : show_symbol(i, j), width = 10, height = 5)
         button.grid(column = i, row = j)
         buttons[i, j] = button
         button_symbols[i, j] = symbols.pop()
